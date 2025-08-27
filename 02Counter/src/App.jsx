@@ -12,12 +12,21 @@ function App() {
   const addValue=()=>{
     // console.log("Value added: ", Math.random());
     console.log("Button Clicked!! -> ", count);
-    count=count+1;
-    setCount(count);
+    if(count>=10){
+      console.log("Not allowed to go more than 10")
+    }else{
+      count=count+1;
+      setCount(count);
+    }
   }
 
   const decValue=()=>{
-    setCount(count-1);
+    // setCount(count-1);
+    if(count<=0){
+      console.log("Negative vals are not allowed.");
+    }else{
+      setCount(count-1);
+    }
   }
 
   return (
