@@ -17,6 +17,10 @@ function App() {
     }else{
       count=count+1;
       setCount(count);
+      // setCount(count);
+      // setCount(count);
+      // setCount(count);
+      // setCount(count);
     }
   }
 
